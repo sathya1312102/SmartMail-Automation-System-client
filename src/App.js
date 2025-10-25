@@ -62,7 +62,7 @@ function App() {
     setProgress(0);
 
     try {
-      const res = await axios.post("http://localhost:5000/sendemail", formData, {
+      const res = await axios.post("https://smartmail-automation-system-server.onrender.com/sendemail", formData, {
         headers: { "Content-Type": "multipart/form-data" },
         onUploadProgress: (e) => setProgress(Math.round((e.loaded * 100) / e.total)),
       });
