@@ -62,10 +62,15 @@ function App() {
     setProgress(0);
 
     try {
-      const res = await axios.post("https://smartmail-automation-system-server.onrender.com/sendemail", formData, {
-        headers: { "Content-Type": "multipart/form-data" },
-        onUploadProgress: (e) => setProgress(Math.round((e.loaded * 100) / e.total)),
-      });
+      const res = await axios.post(
+        "https://smartmail-automation-system-server.onrender.com/sendemail", // Render backend
+        formData,
+        {
+          headers: { "Content-Type": "multipart/form-data" },
+          onUploadProgress: (e) =>
+            setProgress(Math.round((e.loaded * 100) / e.total)),
+        }
+      );
       alert(res.data === true ? "Emails Sent Successfully ✅" : "Failed ❌");
     } catch (err) {
       console.error(err);
@@ -109,8 +114,12 @@ function App() {
           onClick={() => fileInputRef.current.click()}
           className="border-2 border-dashed border-blue-700 rounded-xl p-6 text-center cursor-pointer hover:bg-gray-800 transition duration-300"
         >
-          <p className="text-gray-300 mb-2">Drag & drop Excel here, or click to select file</p>
-          <p className="text-gray-400 text-sm">Only Column A will be read as emails</p>
+          <p className="text-gray-300 mb-2">
+            Drag & drop Excel here, or click to select file
+          </p>
+          <p className="text-gray-400 text-sm">
+            Only Column A will be read as emails
+          </p>
           <input
             ref={fileInputRef}
             type="file"
