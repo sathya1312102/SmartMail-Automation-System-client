@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# SmartMail-Automation-System-client
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+SmartMail Automation with React, Node.js, Express and Nodemailer
 
-## Available Scripts
+A full-stack application designed to send personalized promotional and notification emails to multiple recipients. Features include dynamic email templates, drag-and-drop Excel uploads, attachment support, and a modern, responsive UI.
 
-In the project directory, you can run:
+🛠️ Tech Stack
 
-### `npm start`
+Frontend: React, TailwindCSS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Backend: Node.js, Express
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Database: MongoDB
 
-### `npm test`
+Email Service: Nodemailer
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Deployment: Render
 
-### `npm run build`
+⚙️ Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Bulk Email Sending: Efficiently send emails to multiple recipients using Nodemailer.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Dynamic Templates: Personalize emails with dynamic content.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Excel Upload: Upload recipient lists via drag-and-drop Excel files.
 
-### `npm run eject`
+Attachment Support: Include attachments in your emails.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Modern UI: Responsive design with a dark theme and smooth animations.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Progress Tracking: Real-time progress bar during email sending.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+📥 Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Clone the repository:
+git clone https://github.com/sathya1312102/SmartMail-Automation-System-client.git
+cd smartmail-automation
 
-## Learn More
+Backend
+cd server
+npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Create a .env file with your email credentials:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+EMAIL_USER=your-email@example.com
+EMAIL_PASS=your-email-password
 
-### Code Splitting
+Start the backend server:
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Frontend
+cd client
+npm install
+npm start
 
-### Analyzing the Bundle Size
+The frontend will run on http://localhost:3000, and the backend on http://localhost:5000.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+🧪 Usage
 
-### Making a Progressive Web App
+Enter the email subject and message.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Upload an Excel file with recipient emails in Column A.
 
-### Advanced Configuration
+Optionally, upload attachments.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Click Send Emails to dispatch the emails.
 
-### Deployment
+🧩 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Contributions are welcome! Please fork the repository, create a new branch, make your changes, and submit a pull request.
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
